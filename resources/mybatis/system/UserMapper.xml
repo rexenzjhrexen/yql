@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rexen.mapper.UserMapper">
+	<resultMap type="User" id="userResultMap">
+		<id column="id" property="USER_ID"/>
+		<result column="USERNAME" property="userName"/>
+		<result column="PASSWORD" property="password"/>
+
+	</resultMap>
+	
+	<!-- 判断用户名和密码 -->
+	<select id="getUserInfo" parameterType="User" resultMap="userResultMap">
+		select * from SYS_USER 
+		where 1=1
+		and USERNAME = #{userName} and PASSWORD=#{password}
+	</select>
+	
+
+	
+</mapper>
