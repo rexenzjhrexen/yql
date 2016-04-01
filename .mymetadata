@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="yql"
+  id="myeclipse.1458479934466"
+  context-root="/aceadmin"
+  j2ee-spec="6.0"
+  archive="yql.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
